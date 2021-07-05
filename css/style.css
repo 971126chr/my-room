@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+}
+.wrap {
+    width: 950px;
+    margin: 20px auto;
+    position: relative;
+}
+.this-page {
+    font-size: 11px;
+    color: #858585;
+    line-height: 10px;
+    padding-bottom: 10px;
+    background: url("../img/main/this-page-line.png") repeat-x bottom;
+}
+span.this-page-blue {
+    background: url("../img/main/this-page-gt.png") no-repeat left center;
+    color: #0172c9;
+    padding-left: 13px;
+    letter-spacing: -1px;
+}
+.aside {
+    position: absolute;
+    top: 37px;
+    left: 0;
+    width: 150px;
+}
+h2.aside-h2, h2.section-h2 {
+    line-height: 30px;
+    font-size: 0;
+    border-bottom: 2px solid #565656;
+    background: url("../img/aside/aside-h2.png") no-repeat left top;
+}
+.order {
+    margin-top: 16px;
+}
+h3.aside-h3 {
+    font-size: 0;
+    line-height: 11px;
+    background: url("../img/aside/order-manage-h3.png") no-repeat;
+}
+.order-list-box {
+    margin-top: 8px;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    background: #f9f9f9;
+    padding: 4.5px 0 3.5px 13px;
+}
+ul.order-list li {
+    background: url("../img/aside/order-list-marker.png") no-repeat left;
+    padding-left: 12px;
+    line-height: 22px;
+}
+ul.order-list li a {
+    font-size: 0;
+    background: url("../img/aside/order-list-1.png") no-repeat;
+    padding: 5.5px 63px;
+    vertical-align: super;
+}
+ul.order-list li:nth-child(2) a {
+    background: url("../img/aside/order-list-2.png") no-repeat;
+}
+ul.order-list li:last-child a {
+    background: url("../img/aside/order-list-3.png") no-repeat;
+}
+.library, .my-bank-book {
+    margin-top: 8px;
+}
+h3.library-h3 {
+    background: url("../img/aside/library-h3.png") no-repeat;
+}
+ul.library-list li:first-child {
+    padding-left: 13px;
+}
+ul.library-list li a {
+    background: url("../img/aside/library-list-1.png") no-repeat;
+}
+ul.library-list li:last-child a {
+    background: url("../img/aside/library-list-2.png") no-repeat;
+}
+.aside .order-list-box:nth-child(7) {
+    padding: 4.5px 0 2.5px 13px;
+}
+h3.my-bank-book-h3 {
+    background: url("../img/aside/my-bank-book-h3.png") no-repeat;
+}
+ul.my-bank-book-list li a {
+    background: url("../img/aside/my-bank-book-list-1.png") no-repeat;
+}
+ul.my-bank-book-list li:nth-child(2) a {
+    background: url("../img/aside/my-bank-book-list-2.png") no-repeat;
+}
+ul.my-bank-book-list li:nth-child(3) a {
+    background: url("../img/aside/my-bank-book-list-3.png") no-repeat;
+}
+ul.my-bank-book-list li:nth-child(4) a {
+    background: url("../img/aside/my-bank-book-list-4.png") no-repeat;
+}
+ul.my-bank-book-list li:nth-child(5) a {
+    background: url("../img/aside/my-bank-book-list-5.png") no-repeat;
+}
+ul.my-bank-book-list li:nth-child(6) a {
+    background: url("../img/aside/my-bank-book-list-6.png") no-repeat;
+}
+ul.my-bank-book-list li:nth-child(7) a {
+    background: url("../img/aside/my-bank-book-list-7.png") no-repeat;
+}
+ul.my-bank-book-list li:last-child a {
+    background: url("../img/aside/my-bank-book-list-8.png") no-repeat;
+}
+.section {
+    margin-top: 21px;
+    width: 950px;
+    padding-left: 170px;
+}
+h2.section-h2 {
+    line-height: 26px;
+    background: url("../img/main/main-h2.png") no-repeat left top;
+}
+.main-content {
+    margin-top: 15px;
+}
+.main-top-nav {
+    line-height: 28px;
+    border: 1px solid #e6e6e6;
+    background: #f7f7f7;
+    font-size: 12px;
+    font-weight: bold;
+}
+ul.main-top-nav-list::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+ul.main-top-nav-list li {
+    float: left;
+    border-right: 1px solid #e6e6e6;
+}
+ul.main-top-nav-list li:hover a, ul.main-top-nav-list li.active a {
+    background: #ffffff;
+    color: #000000;
+    border-bottom: #ffffff;
+    padding: 6px 11px 7px 12px;
+}
+ul.main-top-nav-list li a {
+    padding: 6px 12px;
+    color: #777777;
+    letter-spacing: 0.5px;
+}
+ul.main-top-nav-list li.active a {
+    letter-spacing: 2.5px;
+}
+ul.main-top-nav-list li:last-child a {
+    letter-spacing: 3px;
+}
+.your-order {
+    margin-top: 20px;
+    line-height: 40px;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    background: #f5f5f5;
+    padding: 0 0 1px 15px;
+}
+dl.your-order-list dt, dl.your-order-list dd {
+    display: inline-block;
+    font-size: 12px;
+}
+dl.your-order-list dt {
+    background: url("../img/main/your-order-arrow.png") no-repeat left center;
+    padding-left: 14px;
+    color: #222222;
+}
+dl.your-order-list dd {
+    color: #ff4c1c;
+    text-indent: -1px;
+    letter-spacing: -0.6px;
+}
+dl.your-order-list dt:nth-child(3) {
+    margin-left: 213px;
+}
+.first-address {
+    margin-top: 30px;
+}
+h3.first-address-h3, h3.collection-h3 {
+    font-size: 14px;
+    color: #222222;
+    padding-left: 21px;
+    line-height: 14px;
+    background: url("../img/main/h3-green-marker.png") no-repeat left center;
+    letter-spacing: -0.5px;
+}
+table.address-table {
+    border-top: 1px solid #99bddd;
+    border-bottom: 1px solid #99bddd;
+    margin-top: 10px;
+    width: 100%;
+    line-height: 29px;
+}
+h3.table-caption {
+    font-size: 0;
+}
+table.address-table > tbody > tr > th {
+    font-size: 11px;
+    color: #1770b5;
+    background: #f9f9f9;
+}
+table.address-table > tbody > tr > th, 
+table.address-table > tbody > tr > td {
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+}
+table.address-table > tbody > tr > th:first-child {
+    border-left: none;
+}
+table.address-table > tbody > tr > td:last-child {
+    border-right: none;
+} 
+table.address-table > tbody > tr:not(:last-child) {
+    border-bottom: 1px solid #dadada;
+}
+table.address-table > tbody > tr > td {
+    font-size: 12px;
+    color: #777777;
+    padding-left: 20px;
+}
+.collection {
+    margin-top: 29px;
+}
+h3.collection-h3 {
+    padding-left: 19px;
+}
+label {
+    cursor: pointer;
+}
+table.collection-table > tbody > tr:first-child > th {
+    vertical-align: middle;
+}
+table.collection-table > tbody > tr > td > div {
+    display: inline-block;
+    letter-spacing: 0.3px;
+}
+table.collection-table > tbody > tr > td > div > input[type="radio"] {
+    vertical-align: middle;
+}
+table.collection-table > tbody > tr > td > div:nth-child(2) {
+    margin-left: 9px;
+}
+table.collection-table > tbody > tr > td > div:nth-child(4),
+table.collection-table > tbody > tr > td > div:last-child {
+    line-height: 21px;
+    vertical-align: top;
+}
+input.small-text, input.middle-text, input.big-text {
+    line-height: 18px;
+    border: 1px solid #bebebe;
+    width: 67px;
+    font-size: 11px;
+    color: #777777;
+    padding-left: 10px;
+}
+img.em-dash {
+    margin-left: 1px;
+}
+button.search-btn {
+    border: none;
+    background: url("../img/main/search-btn.png") repeat-x;
+    display: inline-block;
+    line-height: 22px;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 2px;
+}
+span.search-btn-left {
+    display: inline-block;
+    background: url("../img/main/search-left-btn.png") no-repeat left;
+    padding-left: 7px;
+}
+span.search-btn-right {
+    display: inline-block;
+    background: url("../img/main/search-right-btn.png") no-repeat right;
+    padding-right: 7px;
+}
+input.middle-text {
+    width: 221px;
+}
+input.big-text {
+    width: 309px;
+}
+table.collection-table > tbody > tr > td > div:last-child {
+    line-height: 19px;
+}
+table.collection-table > tbody > tr > td > div:last-child > input.big-text {
+    margin-left: 6px;
+}
+select.area-code-list {
+    font-size: 11px;
+    color: #777777;
+    text-indent: 4px;
+    width: 67px;
+    height: 20px;
+    border: 1px solid #bebebe;
+}
