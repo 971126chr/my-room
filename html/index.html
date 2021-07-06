@@ -11,7 +11,7 @@
 <body>
     <div class="wrap">
         <div class="this-page">
-            홈 <span class="this-page-blue">마이룸</span>
+            <a href="#none">홈</a> <span class="this-page-blue">마이룸</span>
         </div>
         <div class="aside">
             <h2 class="aside-h2">마이룸</h2>
@@ -101,103 +101,379 @@
                     </dl>
                 </div>
                 <div class="first-address">
-                    <h3 class="first-address-h3">1번쨰 배송지</h3>
-                    <table class="address-table">
-                        <h3 class="table-caption">1번쨰 배송지 표</h3>
-                        <colgroup>
-                            <col style="width: 92px;">
-                            <col style="width: 426px;">
-                            <col style="width: 92px;">
-                            <col style="width: 167px;">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">받으시는 분</th>
-                                <td>홍길동</td>
-                                <th scope="row">연락처</th>
-                                <td>02-000-0000</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">배송지 주소</th>
-                                <td>[000-000] 서울 종로구 신문로1가 238 신문로빌딩 7층</td>
-                                <th scope="row">휴대전화번호</th>
-                                <td>02-000-0000</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div>
+                        <h3 class="first-address-h3">1번쨰 배송지</h3>
+                        <table class="address-table">
+                            <colgroup>
+                                <col style="width: 92px;">
+                                <col style="width: 426px;">
+                                <col style="width: 92px;">
+                                <col style="width: 167px;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">받으시는 분</th>
+                                    <td>홍길동</td>
+                                    <th scope="row">연락처</th>
+                                    <td>02-000-0000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">배송지 주소</th>
+                                    <td>[000-000] 서울 종로구 신문로1가 238 신문로빌딩 7층</td>
+                                    <th scope="row">휴대전화번호</th>
+                                    <td>02-000-0000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <div class="collection">
-                    <h3 class="first-address-h3 collection-h3">회수지 주소</h3>
-                    <table class="address-table collection-table">
-                        <h3 class="table-caption">회수지 주소 표</h3>
-                        <colgroup>
-                            <col style="width: 92px;">
-                            <col style="width: 296px;">
-                            <col style="width: 92px;">
-                            <col style="width: 297px;">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">
-                                    <label for="how-send">회수지 주소</label>
-                                </th>
-                                <td colspan="3">
-                                    <div>
-                                        <input type="radio" id="normal" name="send" checked>
-                                        <label for="normal">[국내] 일반택배</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" id="how-send" name="send">
-                                        <label for="how-send">[국내] 편의점 배송</label>
-                                    </div><br>
-                                    <div>
-                                        <input type="text" class="small-text">
-                                        <img src="../img/main/num-line.png" alt="em dash" class="em-dash">
-                                        <input type="text" class="small-text">
-                                        <button class="search-btn">
-                                            <span class="search-btn-left">
-                                                <span class="search-btn-right">
-                                                    검색
+                    <div>
+                        <h3 class="first-address-h3 collection-h3">회수지 주소</h3>
+                        <table class="address-table collection-table">
+                            <colgroup>
+                                <col style="width: 92px;">
+                                <col style="width: 296px;">
+                                <col style="width: 93px;">
+                                <col style="width: 296px;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="how-send">회수지 주소</label>
+                                    </th>
+                                    <td colspan="3">
+                                        <div>
+                                            <input type="radio" id="normal" name="send" checked>
+                                            <label for="normal">[국내] 일반택배</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="how-send" name="send">
+                                            <label for="how-send">[국내] 편의점 배송</label>
+                                        </div><br>
+                                        <div>
+                                            <input type="text" class="small-text">
+                                            <img src="../img/main/num-line.png" alt="em dash" class="em-dash">
+                                            <input type="text" class="small-text">
+                                            <button class="search-btn">
+                                                <span class="search-btn-left">
+                                                    <span class="search-btn-right">
+                                                        검색
+                                                    </span>
                                                 </span>
-                                            </span>
-                                        </button>
-                                    </div><br>
-                                    <div>
-                                        <input type="text" class="middle-text">
-                                        <input type="text" class="big-text">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">
-                                    <label for="area-code">전화번호</label>
-                                </th>
-                                <td>
-                                    <select name="area-code" id="area-code" class="area-code-list">
-                                        <option value="Seoul">02</option>
-                                        <option value="Incheon">032</option>
-                                        <option value="Kimpo">031</option>
-                                    </select>
-                                    <img src="../img/main/num-line.png" alt="em dash" class="em-dash">
-                                    <input type="text" class="small-text" value="123">
-                                    <img src="../img/main/num-line.png" alt="em dash" class="em-dash">
-                                    <input type="text" class="small-text" value="4567">
-                                </td>
-                                <th scope="row">
-                                    <label for="phone-num">휴대전화번호</label>
-                                </th>
-                                <td>
-                                    <select name="phone-num" id="phone-num" class="area-code-list">
-                                        <option value="010">010</option>
-                                    </select>
-                                    <img src="../img/main/num-line.png" alt="em dash" class="em-dash">
-                                    <input type="text" class="small-text" value="123">
-                                    <img src="../img/main/num-line.png" alt="em dash" class="em-dash">
-                                    <input type="text" class="small-text" value="4567">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                            </button>
+                                        </div><br>
+                                        <div>
+                                            <input type="text" class="middle-text">
+                                            <input type="text" class="big-text">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="area-code">전화번호</label>
+                                    </th>
+                                    <td>
+                                        <select name="area-code" id="area-code" class="area-code-list">
+                                            <option value="Seoul">02</option>
+                                            <option value="Incheon">032</option>
+                                            <option value="Kimpo">031</option>
+                                        </select>
+                                        <img src="../img/main/num-line.png" alt="em dash" class="em-dash">
+                                        <input type="text" class="small-text text-box-position" value="123">
+                                        <img src="../img/main/num-line.png" alt="em dash" class="em-dash">
+                                        <input type="text" class="small-text text-box-position" value="4567">
+                                    </td>
+                                    <th scope="row">
+                                        <label for="phone-num">휴대전화번호</label>
+                                    </th>
+                                    <td>
+                                        <select name="phone-num" id="phone-num" class="area-code-list">
+                                            <option value="010">010</option>
+                                        </select>
+                                        <img src="../img/main/num-line.png" alt="em dash" class="em-dash">
+                                        <input type="text" class="small-text" value="123">
+                                        <img src="../img/main/num-line.png" alt="em dash" class="em-dash text-box-position">
+                                        <input type="text" class="small-text text-box-position" value="4567">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="kyobo-post">
+                        <div>
+                            <div class="h4-padding">
+                                <h4 class="kyobo-post-h4">교보배송상품</h4>
+                            </div>
+                            <table class="address-table collection-table">
+                                <colgroup>
+                                    <col style="width: 41px;">
+                                    <col style="width: 245px;">
+                                    <col style="width: 78px;">
+                                    <col style="width: 75px;">
+                                    <col style="width: 77px;">
+                                    <col style="width: 92px;">
+                                    <col style="width: 166px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th scope="col">상품명</th>
+                                        <th scope="col">주문수량</th>
+                                        <th scope="col">금액</th>
+                                        <th scope="col">반품수량</th>
+                                        <th scope="col">반품사유</th>
+                                        <th scope="col">메모</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="chk" id="chk-box-1">
+                                        </td>
+                                        <td>
+                                            <label for="chk-box-1">
+                                                [도서] 운명이다
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label for="chk-box-1">1</label>
+                                        </td>
+                                        <td>
+                                            <label for="chk-box-1">
+                                                30,000원
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label>
+                                                <input type="text"> / 1
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label>
+                                                <select name="return-reason">
+                                                    <option value="이중주문">
+                                                        이중주문
+                                                    </option>
+                                                </select>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label>
+                                                <input type="text">
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="chk" id="chk-box-2">
+                                        </td>
+                                        <td>
+                                            <label for="chk-box-2">
+                                                [도서] 운명이다
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label for="chk-box-2">1</label>
+                                        </td>
+                                        <td>
+                                            <label for="chk-box-2">
+                                                30,000원
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label>
+                                                <input type="text"> / 1
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label>
+                                                <select name="return-reason">
+                                                    <option value="파본">
+                                                        파본
+                                                    </option>
+                                                </select>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label>
+                                                <input type="text" value="파본페이지번호를 적어주세요" class="memo-textbox">
+                                            </label>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <h4 class="table-caption">교보 배송방법</h4>
+                            <table class="address-table collection-table">
+                                <colgroup>
+                                    <col style="width: 210px;">
+                                    <col style="width: 177px;">
+                                    <col style="width: 177px;">
+                                    <col style="width: 213px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <label for="kyobo-how-post">배송방법</label>
+                                        </th>
+                                        <th>반품배송비</th>
+                                        <th>배송비 부담</th>
+                                        <th>환불방법</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="kyobo-how-post" checked> 교보택배
+                                            <input type="radio" name="kyobo-how-post" id="kyobo-how-post"> 개인배송
+                                        </td>
+                                        <td>1,000원</td>
+                                        <td>고객부담</td>
+                                        <td>환불금액에서 차감</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="kyobo-post">
+                        <div>
+                            <div class="h4-padding">
+                                <h4 class="kyobo-post-h4">교보배송상품</h4>
+                            </div>
+                            <table class="address-table collection-table">
+                                <colgroup>
+                                    <col style="width: 41px;">
+                                    <col style="width: 245px;">
+                                    <col style="width: 78px;">
+                                    <col style="width: 75px;">
+                                    <col style="width: 77px;">
+                                    <col style="width: 92px;">
+                                    <col style="width: 166px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th scope="col">상품명</th>
+                                        <th scope="col">주문수량</th>
+                                        <th scope="col">금액</th>
+                                        <th scope="col">반품수량</th>
+                                        <th scope="col">반품사유</th>
+                                        <th scope="col">메모</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="chk" id="chk-box-3">
+                                        </td>
+                                        <td>
+                                            <label for="chk-box-3">
+                                                [도서] 운명이다
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label for="chk-box-3">1</label>
+                                        </td>
+                                        <td>
+                                            <label for="chk-box-3">
+                                                30,000원
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label>
+                                                <input type="text"> / 1
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label>
+                                                <select name="return-reason">
+                                                    <option value="이중주문">
+                                                        이중주문
+                                                    </option>
+                                                </select>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label>
+                                                <input type="text">
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="chk" id="chk-box-4">
+                                        </td>
+                                        <td>
+                                            <label for="chk-box-4">
+                                                [도서] 운명이다
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label for="chk-box-4">1</label>
+                                        </td>
+                                        <td>
+                                            <label for="chk-box-4">
+                                                30,000원
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label>
+                                                <input type="text"> / 1
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label>
+                                                <select name="return-reason">
+                                                    <option value="파본">
+                                                        파본
+                                                    </option>
+                                                </select>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label>
+                                                <input type="text" value="파본페이지번호를 적어주세요" class="memo-textbox">
+                                            </label>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <h4 class="table-caption">교보 배송방법</h4>
+                            <table class="address-table collection-table">
+                                <colgroup>
+                                    <col style="width: 210px;">
+                                    <col style="width: 177px;">
+                                    <col style="width: 177px;">
+                                    <col style="width: 213px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <label for="kyobo-how-post-2">배송방법</label>
+                                        </th>
+                                        <th>반품배송비</th>
+                                        <th>배송비 부담</th>
+                                        <th>환불방법</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="kyobo-how-post-2" checked> 교보택배
+                                            <input type="radio" name="kyobo-how-post-2" id="kyobo-how-post-2"> 개인배송
+                                        </td>
+                                        <td>1,000원</td>
+                                        <td>고객부담</td>
+                                        <td>환불금액에서 차감</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
