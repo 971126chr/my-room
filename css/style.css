@@ -241,6 +241,9 @@ h3.collection-h3 {
 label {
     cursor: pointer;
 }
+label.big-label {
+    padding: 36px 15px;
+}
 table.collection-table > tbody > tr:first-child > th {
     vertical-align: middle;
 }
